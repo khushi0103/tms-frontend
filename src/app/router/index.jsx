@@ -1,11 +1,8 @@
-import { BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
-import AdminLoginPage from "../../features/auth/pages/AdminLoginPage";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Login from "../../features/platform/pages/Login";
 import ProtectedRoute from "./ProtectedRoute";
-
-function AdminDashboard() {
-  return <h1>Platform Admin Dashboard</h1>;
-}
-
+import AdminDashboard from "../../features/platform/pages/AdminDashboard";
+  
 function Router() {
   return (
     <BrowserRouter>
@@ -13,7 +10,7 @@ function Router() {
 
         {/* Redirect to login */}
         <Route path="/" element={<Navigate to="/admin/login" />} />
-        <Route path="/admin/login" element={<AdminLoginPage />} />
+        <Route path="/admin/login" element={<Login />} />
 
         <Route
           path="/admin/dashboard"
