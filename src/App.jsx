@@ -1,14 +1,15 @@
+// src/App.jsx
+import React from 'react';
+// import { BrowserRouter, Routes, Route, Navigate, Router } from 'react-router-dom';
+import AdminDashboard from './features/platform/pages/AdminDashboard';
+import Login from './features/platform/pages/Login'; // Import your login page
+import Router from './app/router/Router'; // Import the router
 
-// import './App.css'
-import Router from "./app/router/Router";
 
 function App() {
-
   return (
-
-    <Router />
-
-  )
+    <Router/>
+  );
 }
 
-export default App
+export default App;
