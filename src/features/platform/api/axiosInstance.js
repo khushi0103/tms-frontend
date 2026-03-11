@@ -2,7 +2,7 @@ import axios from "axios";
 import {refreshEndpoint} from "./loginEndpoint";
 
 const axiosInstance = axios.create({
-    baseURL: "http://192.168.1.36",
+    baseURL: "http://192.168.1.34",
     headers: {
         "Content-Type": "application/json",
     },
